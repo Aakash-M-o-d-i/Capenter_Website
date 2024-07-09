@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Wood Products & Carpenter Services</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("AtpuF_VALfbZkJTbk");
+        })();
+    </script>
+    <script src="/js/loading.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo">
+    </header>
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container contact-container">
+        <div class="contact-info">
+            <h2>Let's chat.</h2>
+            <p>If you have any questions or would like to inquire about our services, please contact us at: ✌️</p>
+            <p>Email:  <a href="mailto:framesmillion@gmail.com">framesmillion@gmail.com</a></p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Woodwork Lane, Carpentry City, WP 12345</p>
+            <p>OR <br> Fill this form, so we will reach you! </p>
+        </div>
+        
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="spinner"></div>
+        </div>
+        <div class="contact-form">
+
+            <form id="contact-form">
+                <h3>Send us a message 🚀</h3>
+                <label for="name">Full name*</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email address*</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+                <label for="message">Tell us more about your project*</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Wood Products & Carpenter Services</p>
+    </footer>
+    <!-- <script src="/js/scripts.js"></script> -->
+    <script src="/js/demo.js"></script>
+</body>
+</html>

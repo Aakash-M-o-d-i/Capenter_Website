@@ -1,0 +1,75 @@
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.table-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 2em;
+}
+
+.table-item {
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    flex: 1 1 30%;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.table-item img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+    height: 55%;
+}
+
+.table-item h2 {
+    margin: 0.5em 0;
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.table-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* THis code for mobile user */
+@media (max-width: 1024px) {
+    .table-item {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .table-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* end */
